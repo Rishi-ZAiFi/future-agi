@@ -8,12 +8,8 @@
 # Environment & secrets — NEVER commit a .env or a populated credentials file
 # ----------------------------------------------------------------------------
 
-.env
-.env.*
 !.env.example
 !.env.*.example
-**/.env
-**/.env.*
 !**/.env.example
 !**/.env.*.example
 
@@ -191,7 +187,6 @@ media/
 # IDE / editor / OS
 # ----------------------------------------------------------------------------
 
-.vscode/
 .cursor/
 .idea/
 
@@ -264,3 +259,7 @@ docker-compose.override.yml
 # ee/ private-repo .gitignore — not part of the public monorepo
 # (ee/LICENSE stays tracked: source-available code needs a license file)
 futureagi/ee/.gitignore
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
