@@ -9,9 +9,9 @@
     "node": ">=22.18.0"
   },
   "scripts": {
-    "dev": "vite",
-    "start": "vite preview",
-    "build": "node --max-old-space-size=8192 ./node_modules/.bin/vite build",
+    "dev": "node api.js && vite",
+    "start": "node api.js && vite preview",
+    "build": "node api.js && node --max-old-space-size=8192 ./node_modules/.bin/vite build",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
